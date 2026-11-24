@@ -66,12 +66,16 @@ python -m streamlit run app.py
 
 The project demonstrates how graph algorithms can solve real-world project scheduling and dependency management problems. Both Kahn's Algorithm and DFS-based Topological Sorting efficiently determine valid task execution sequences in directed acyclic graphs.
 
-### Academic Information
+## Academic Information
 
-Course: Bachelor of Computer Applications (BCA)
-
-Subject: Design and Analysis of Algorithms
-
-Project Type: Capstone Project
-
-Project Number: 10
+| Details | Information |
+|---|---|
+| Submitted By | Shivanshu Shukla |
+| Roll Number | 2501060131 |
+| Course | BCA (AI & DS) |
+| Semester | 3rd Semester |
+| Section | B |
+| Subject | Design and Analysis of Algorithms |
+| Project Type | Capstone Project |
+| Project Number | 10 |
+| Academic Session | 2026-27 |

@@ -16,6 +16,12 @@ st.title("Smart Dependency Manager")
 st.caption(
     "Design and Analysis of Algorithms | Project 10"
 )
+st.markdown("""
+**Submitted by:** Shivanshu Shukla  
+**Roll No:** 2501060131  
+**Course:** BCA (AI & DS)  
+**Semester:** 3 | **Section:** B
+""")
 
 if "graph" not in st.session_state:
     st.session_state.graph = {
