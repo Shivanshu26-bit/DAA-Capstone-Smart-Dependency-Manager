@@ -14,20 +14,20 @@ def draw_graph(graph):
     fig, ax = plt.subplots(figsize=(10, 5))
 
     if nx.is_directed_acyclic_graph(G):
-    for layer, nodes in enumerate(nx.topological_generations(G)):
-        for node in nodes:
-            G.nodes[node]["layer"] = layer
+        for layer, nodes in enumerate(nx.topological_generations(G)):
+            for node in nodes:
+                G.nodes[node]["layer"] = layer
 
-    pos = nx.multipartite_layout(
-        G, subset_key="layer", align="horizontal"
-    )
+        pos = nx.multipartite_layout(
+            G, subset_key="layer", align="horizontal"
+        )
 
-    pos = {
-        node: (x, -y)
-        for node, (x, y) in pos.items()
-    }
-else:
-    pos = nx.circular_layout(G)
+        pos = {
+            node: (x, -y)
+            for node, (x, y) in pos.items()
+        }
+    else:
+        pos = nx.circular_layout(G)
 
     nx.draw(
         G,
